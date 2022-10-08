@@ -1,0 +1,125 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Quicksand:wght@700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+:root {
+    --cor01: #44A9DB;
+    --cor02: #0293DB;
+    --cor03: #327CA2;
+    --cor04: #016090;
+    --cor05: #013E5C;
+
+    --preto: #000000;
+    --branco: #fff;
+    --cor-degrade: linear-gradient(-90deg, #44A9DB, #0293DB 25%, #016090, #013E5C );
+
+    --fonte-padrao: Arial, Helvetica, sans-serif;
+    --fonte-titulo: 'Roboto', sans-serif;
+    --fonte-paragrafo: 'Asap', sans-serif;
+    --fonte-menu: 'Quicksand', sans-serif;
+}
+
+
+
+
+/*      CABEÇALHO      */
+.cabeçalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 5em 1em 20em;
+}
+
+.cabeçalho__logotipo{
+    height: 90px;
+}
+
+.cabeçalho__logotipo:hover {
+    transform: rotateY(1turn) scale(1.1);
+    transition-duration: 1s;
+}
+
+.menu-bar__link{
+    color: var(--preto);
+    text-decoration: none;
+    font-family: var(--fonte-menu);
+    font-size: 36px;
+    margin-left: 0.6em;
+    text-transform: uppercase;
+}
+.menu-bar__link:hover{
+    color: var(--cor02);
+    border-bottom: 5px solid var(--cor02);
+}
+.menu-bar__link-selecionado{
+    color: var(--cor04);
+    border-bottom: 5px solid var(--cor04);
+}
+
+
+
+
+
+/*      CONTEUDO      */
+.container{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.principal{
+    background-image: var(--cor-degrade);
+    /* Chrome, Opera */
+    -webkit-transform: skew(-19deg);
+    /* IE */
+    -ms-transform: skew(-19deg);
+    /* Padrão */
+    transform: skew(-19deg);
+    margin-left: -200px;
+    border-radius: 5px;
+}
+.container__secundario{
+    padding: 200px 200px 0px 300px;
+    -webkit-transform: skew(19deg);
+    /* IE */
+    -ms-transform: skew(19deg);
+    /* Padrão */
+    transform: skew(19deg);
+}
+
+.principal__titulo, .principal__texto{
+    color: var(--branco);
+}
+.principal__titulo{
+    font-family: var(--fonte-titulo);
+    font-size: 8em;
+    font-weight: 700;
+    text-transform: uppercase;
+    
+}
+
+.principal__texto{
+    font-family: var(--fonte-paragrafo);
+    font-size: 2.5em;
+    font-weight: 400;
+}
+
+.container__imagem{
+    height: 1000px;
+}
+
+.listra{
+    margin-left: 7px;
+    border-radius: 5px;
+    background: var(--cor01);
+    /* Chrome, Opera */
+    -webkit-transform: skew(-19deg);
+    /* IE */
+    -ms-transform: skew(-19deg);
+    /* Padrão */
+    transform: skew(-19deg);
+}
+
+
+
+/*      RODAPÉ      */
